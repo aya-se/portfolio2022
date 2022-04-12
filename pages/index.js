@@ -14,7 +14,11 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">aya_se&apos;s portfolio</a> !
+          Welcome to{' '}
+          <Link href="">
+            <a>aya_se&apos;s portfolio</a>
+          </Link>{' '}
+          !
         </h1>
 
         <div className={styles.grid}>
