@@ -11,6 +11,9 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+  &:hover {
+    color: #30944e;
+  }
 }
 
 * {
@@ -52,7 +55,7 @@ h3.section_title {
     content: '';
     width: 100%;
     height: 2px;
-    background: #333;
+    background: #30944e;
     transform: scale(0, 1);
     transform-origin: center top;
     transition: transform 0.3s;
@@ -62,6 +65,13 @@ h3.section_title {
     &:after {
       transform: scale(1, 1);
     }
+  }
+}
+
+.navbar-light .navbar-toggler {
+  border-width: 0px;
+  &:focus {
+    border-width: 0px;
   }
 }
 

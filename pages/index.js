@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import Link from 'next/link';
 import styles from '../styles/Home.module.scss'
 
@@ -28,12 +27,6 @@ export default function Home() {
               <p>aya_seの基本的なプロフィールを記載しています。</p>
             </a>
           </Link>
-          <Link href="/account">
-            <a href="https://nextjs.org/docs" className={styles.card}>
-              <h2>Account &rarr;</h2>
-              <p>各種サービス・SNSのアカウント置き場です。</p>
-            </a>
-          </Link>
           <Link href="/history">
             <a href="https://nextjs.org/docs" className={styles.card}>
               <h2>History &rarr;</h2>
@@ -56,6 +49,12 @@ export default function Home() {
             <a href="https://nextjs.org/docs" className={styles.card}>
               <h2>Blog &rarr;</h2>
               <p>オリジナルのブログです。気が向いた時に更新します。</p>
+            </a>
+          </Link>
+          <Link href="/account">
+            <a href="https://nextjs.org/docs" className={styles.card}>
+              <h2>Account &rarr;</h2>
+              <p>各種サービス・SNSのアカウント置き場です。</p>
             </a>
           </Link>
         </div>

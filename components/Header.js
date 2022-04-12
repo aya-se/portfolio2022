@@ -32,45 +32,45 @@ export default function Header() {
         >
           <ul className="navbar-nav">
             <li className={styles.header_item}>
-              <Link href="/">
+              <Link href="/about">
                 <a className={[styles.header_link, 'link_underline'].join(' ')}>
                   About
                 </a>
               </Link>
             </li>
             <li className={styles.header_item}>
-              <Link href="/feature">
-                <a className={[styles.header_link, 'link_underline'].join(' ')}>
-                  Account
-                </a>
-              </Link>
-            </li>
-            <li className={styles.header_item}>
-              <Link href="/info">
+              <Link href="/history">
                 <a className={[styles.header_link, 'link_underline'].join(' ')}>
                   History
                 </a>
               </Link>
             </li>
             <li className={styles.header_item}>
-              <Link href="/info">
+              <Link href="/skill">
                 <a className={[styles.header_link, 'link_underline'].join(' ')}>
                   Skill
                 </a>
               </Link>
             </li>
             <li className={styles.header_item}>
-              <Link href="/info">
+              <Link href="/work">
                 <a className={[styles.header_link, 'link_underline'].join(' ')}>
                   Work
                 </a>
               </Link>
             </li>
             <li className={styles.header_item}>
-              <Link href="/info">
+              <Link href="/blog">
                 <a className={[styles.header_link, 'link_underline'].join(' ')}>
                   Blog
                   <em className="bi bi-box-arrow-up-right mx-1" />
+                </a>
+              </Link>
+            </li>
+            <li className={styles.header_item}>
+              <Link href="/account">
+                <a className={[styles.header_link, 'link_underline'].join(' ')}>
+                  Account
                 </a>
               </Link>
             </li>
