@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Image from 'next/image';
+import styles from '../styles/Header.module.scss';
 
 export default function Header() {
   return (
@@ -7,7 +7,7 @@ export default function Header() {
       <div className="container-fluid px-0">
         <h3 className="my-1">
           <Link className="navbar-brand" href="/">
-            <a className="link-underline px-2">aya_se's portfolio</a>
+            <a className="px-2">aya_se&apos;s portfolio</a>
           </Link>
         </h3>
         <button
@@ -21,36 +21,54 @@ export default function Header() {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <div
+          className={[
+            'nav_item',
+            'collapse',
+            'navbar-collapse',
+            styles.header_content,
+          ].join(' ')}
+          id="navbarSupportedContent"
+        >
           <ul className="navbar-nav">
-            <li className="nav-item">
+            <li className={styles.header_item}>
               <Link href="/">
-                <a className="nav-link link-underline">About</a>
+                <a className={[styles.header_link, 'link_underline'].join(' ')}>
+                  About
+                </a>
               </Link>
             </li>
-            <li className="nav-item">
+            <li className={styles.header_item}>
               <Link href="/feature">
-                <a className="nav-link link-underline">Account</a>
+                <a className={[styles.header_link, 'link_underline'].join(' ')}>
+                  Account
+                </a>
               </Link>
             </li>
-            <li className="nav-item">
+            <li className={styles.header_item}>
               <Link href="/info">
-                <a className="nav-link link-underline">History</a>
+                <a className={[styles.header_link, 'link_underline'].join(' ')}>
+                  History
+                </a>
               </Link>
             </li>
-            <li className="nav-item">
+            <li className={styles.header_item}>
               <Link href="/info">
-                <a className="nav-link link-underline">Skill</a>
+                <a className={[styles.header_link, 'link_underline'].join(' ')}>
+                  Skill
+                </a>
               </Link>
             </li>
-            <li className="nav-item">
+            <li className={styles.header_item}>
               <Link href="/info">
-                <a className="nav-link link-underline">Work</a>
+                <a className={[styles.header_link, 'link_underline'].join(' ')}>
+                  Work
+                </a>
               </Link>
             </li>
-            <li className="nav-item">
+            <li className={styles.header_item}>
               <Link href="/info">
-                <a className="nav-link link-underline">
+                <a className={[styles.header_link, 'link_underline'].join(' ')}>
                   Blog
                   <em className="bi bi-box-arrow-up-right mx-1" />
                 </a>
